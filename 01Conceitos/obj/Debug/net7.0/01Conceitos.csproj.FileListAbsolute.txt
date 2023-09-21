@@ -1,0 +1,14 @@
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\bin\Debug\net7.0\01Conceitos.exe
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\bin\Debug\net7.0\01Conceitos.deps.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\bin\Debug\net7.0\01Conceitos.runtimeconfig.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\bin\Debug\net7.0\01Conceitos.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\bin\Debug\net7.0\01Conceitos.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\obj\Debug\net7.0\01Conceitos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\obj\Debug\net7.0\01Conceitos.AssemblyInfoInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\obj\Debug\net7.0\01Conceitos.AssemblyInfo.cs
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\obj\Debug\net7.0\01Conceitos.csproj.CoreCompileInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\obj\Debug\net7.0\01Conceitos.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\obj\Debug\net7.0\refint\01Conceitos.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\obj\Debug\net7.0\01Conceitos.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\obj\Debug\net7.0\01Conceitos.genruntimeconfig.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\01Conceitos\obj\Debug\net7.0\ref\01Conceitos.dll
