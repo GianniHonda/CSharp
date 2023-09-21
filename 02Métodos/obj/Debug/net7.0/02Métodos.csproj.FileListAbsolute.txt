@@ -1,0 +1,14 @@
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\bin\Debug\net7.0\02Métodos.exe
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\bin\Debug\net7.0\02Métodos.deps.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\bin\Debug\net7.0\02Métodos.runtimeconfig.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\bin\Debug\net7.0\02Métodos.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\bin\Debug\net7.0\02Métodos.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\obj\Debug\net7.0\02Métodos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\obj\Debug\net7.0\02Métodos.AssemblyInfoInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\obj\Debug\net7.0\02Métodos.AssemblyInfo.cs
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\obj\Debug\net7.0\02Métodos.csproj.CoreCompileInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\obj\Debug\net7.0\02Métodos.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\obj\Debug\net7.0\refint\02Métodos.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\obj\Debug\net7.0\02Métodos.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\obj\Debug\net7.0\02Métodos.genruntimeconfig.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\02Métodos\obj\Debug\net7.0\ref\02Métodos.dll
