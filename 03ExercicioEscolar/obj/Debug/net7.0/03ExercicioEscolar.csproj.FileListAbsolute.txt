@@ -1,0 +1,14 @@
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\bin\Debug\net7.0\03ExercicioEscolar.exe
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\bin\Debug\net7.0\03ExercicioEscolar.deps.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\bin\Debug\net7.0\03ExercicioEscolar.runtimeconfig.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\bin\Debug\net7.0\03ExercicioEscolar.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\bin\Debug\net7.0\03ExercicioEscolar.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\obj\Debug\net7.0\03ExercicioEscolar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\obj\Debug\net7.0\03ExercicioEscolar.AssemblyInfoInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\obj\Debug\net7.0\03ExercicioEscolar.AssemblyInfo.cs
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\obj\Debug\net7.0\03ExercicioEscolar.csproj.CoreCompileInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\obj\Debug\net7.0\03ExercicioEscolar.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\obj\Debug\net7.0\refint\03ExercicioEscolar.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\obj\Debug\net7.0\03ExercicioEscolar.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\obj\Debug\net7.0\03ExercicioEscolar.genruntimeconfig.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\03ExercicioEscolar\obj\Debug\net7.0\ref\03ExercicioEscolar.dll
