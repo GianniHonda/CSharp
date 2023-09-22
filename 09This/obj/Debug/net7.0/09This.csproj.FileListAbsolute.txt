@@ -1,0 +1,14 @@
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\bin\Debug\net7.0\09This.exe
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\bin\Debug\net7.0\09This.deps.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\bin\Debug\net7.0\09This.runtimeconfig.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\bin\Debug\net7.0\09This.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\bin\Debug\net7.0\09This.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\obj\Debug\net7.0\09This.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\obj\Debug\net7.0\09This.AssemblyInfoInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\obj\Debug\net7.0\09This.AssemblyInfo.cs
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\obj\Debug\net7.0\09This.csproj.CoreCompileInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\obj\Debug\net7.0\09This.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\obj\Debug\net7.0\refint\09This.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\obj\Debug\net7.0\09This.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\obj\Debug\net7.0\09This.genruntimeconfig.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\09This\obj\Debug\net7.0\ref\09This.dll
