@@ -1,0 +1,14 @@
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\obj\Debug\net7.0\08GetSet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\obj\Debug\net7.0\08GetSet.AssemblyInfoInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\obj\Debug\net7.0\08GetSet.AssemblyInfo.cs
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\obj\Debug\net7.0\08GetSet.csproj.CoreCompileInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\bin\Debug\net7.0\08GetSet.exe
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\bin\Debug\net7.0\08GetSet.deps.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\bin\Debug\net7.0\08GetSet.runtimeconfig.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\bin\Debug\net7.0\08GetSet.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\bin\Debug\net7.0\08GetSet.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\obj\Debug\net7.0\08GetSet.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\obj\Debug\net7.0\refint\08GetSet.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\obj\Debug\net7.0\08GetSet.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\obj\Debug\net7.0\08GetSet.genruntimeconfig.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\08GetSet\obj\Debug\net7.0\ref\08GetSet.dll
