@@ -1,0 +1,14 @@
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\bin\Debug\net7.0\10Heranca.exe
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\bin\Debug\net7.0\10Heranca.deps.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\bin\Debug\net7.0\10Heranca.runtimeconfig.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\bin\Debug\net7.0\10Heranca.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\bin\Debug\net7.0\10Heranca.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\obj\Debug\net7.0\10Heranca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\obj\Debug\net7.0\10Heranca.AssemblyInfoInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\obj\Debug\net7.0\10Heranca.AssemblyInfo.cs
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\obj\Debug\net7.0\10Heranca.csproj.CoreCompileInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\obj\Debug\net7.0\10Heranca.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\obj\Debug\net7.0\refint\10Heranca.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\obj\Debug\net7.0\10Heranca.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\obj\Debug\net7.0\10Heranca.genruntimeconfig.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\10Heranca\obj\Debug\net7.0\ref\10Heranca.dll
