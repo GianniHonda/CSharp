@@ -1,0 +1,14 @@
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\obj\Debug\net7.0\14Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\obj\Debug\net7.0\14Interface.AssemblyInfoInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\obj\Debug\net7.0\14Interface.AssemblyInfo.cs
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\obj\Debug\net7.0\14Interface.csproj.CoreCompileInputs.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\bin\Debug\net7.0\14Interface.exe
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\bin\Debug\net7.0\14Interface.deps.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\bin\Debug\net7.0\14Interface.runtimeconfig.json
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\bin\Debug\net7.0\14Interface.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\bin\Debug\net7.0\14Interface.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\obj\Debug\net7.0\14Interface.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\obj\Debug\net7.0\refint\14Interface.dll
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\obj\Debug\net7.0\14Interface.pdb
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\obj\Debug\net7.0\14Interface.genruntimeconfig.cache
+C:\Users\gigi_\OneDrive\Área de Trabalho\Orientação a Objetos\14Interface\obj\Debug\net7.0\ref\14Interface.dll
