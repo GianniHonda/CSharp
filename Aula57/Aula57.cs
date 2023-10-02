@@ -10,6 +10,7 @@ class Aula57{
         carros.Add("HRV");
         carros.Add("Focus");
         carros.Add("Argo");
+        carros.Add("HRV");
 
         //carros2.AddRange(carros2);
         //carros2.Clear();
@@ -22,6 +23,28 @@ class Aula57{
 
         carros.CopyTo(carros2,2);
 
+        carros.Insert(1,"Cruze");
+
+        int pos2=carros.LastIndexOf("HRV");
+
+        /*carros.RemoveAt(0);
+
+        if(carros.Remove("Argo")){
+            Console.WriteLine("Argo removito");
+        }else{
+            Console.WriteLine("Argo não removido");
+        }*/
+
+        //carros.Reverse();
+        carros.Sort();
+
+        int tamanho=carros.Count;
+        carros.Capacity=15;
+        int capa=carros.Capacity;
+
+        Console.WriteLine("Tamanho {0}",tamanho);
+        Console.WriteLine("Capacidade {0}",capa);
+
         foreach(string c in carros){
             Console.WriteLine("Carro: {0}",c);
         }
@@ -30,5 +53,6 @@ class Aula57{
         int pos=0;
         pos=carros.IndexOf(k);
         Console.WriteLine("Carro {0} esta na posicao {1}",k,pos);
+        Console.WriteLine("Ultimo HRV esta na posicao pos {0}",pos2);
     }
 }
