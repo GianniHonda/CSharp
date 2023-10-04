@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Componentes
 {
@@ -50,6 +51,18 @@ namespace Componentes
         private void btn_valNum_Click(object sender, EventArgs e)
         {
             MessageBox.Show(num.ToString());
+        }
+
+        private void checkBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CheckBox f_CheckBox = new CheckBox();
+            f_CheckBox.ShowDialog();
+        }
+
+        private void checkedListBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CheckedListBox f_CheckedListBox = new CheckedListBox();
+            f_CheckedListBox.ShowDialog();
         }
     }
 }
