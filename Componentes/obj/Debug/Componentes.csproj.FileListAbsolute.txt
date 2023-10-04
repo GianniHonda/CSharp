@@ -8,3 +8,4 @@ D:\C#\Aulas\Parte2\Componentes\Componentes\obj\Debug\Componentes.csproj.Generate
 D:\C#\Aulas\Parte2\Componentes\Componentes\obj\Debug\Componentes.csproj.CoreCompileInputs.cache
 D:\C#\Aulas\Parte2\Componentes\Componentes\obj\Debug\Componentes.exe
 D:\C#\Aulas\Parte2\Componentes\Componentes\obj\Debug\Componentes.pdb
+D:\C#\Aulas\Parte2\Componentes\Componentes\obj\Debug\Componentes.F_Veiculos.resources
