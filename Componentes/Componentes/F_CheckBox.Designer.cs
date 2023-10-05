@@ -34,6 +34,7 @@
             this.cb_onibus = new System.Windows.Forms.CheckBox();
             this.btn_transportesMarcados = new System.Windows.Forms.Button();
             this.cb_patinete = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cb_carro
@@ -97,11 +98,22 @@
             this.cb_patinete.UseVisualStyleBackColor = true;
             this.cb_patinete.CheckedChanged += new System.EventHandler(this.cb_patinete_CheckedChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(93, 32);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(230, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Abrir form filho";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // F_CheckBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(335, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cb_patinete);
             this.Controls.Add(this.btn_transportesMarcados);
             this.Controls.Add(this.cb_onibus);
@@ -118,12 +130,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.CheckBox cb_carro;
-        private System.Windows.Forms.CheckBox cb_aviao;
-        private System.Windows.Forms.CheckBox cb_navio;
-        private System.Windows.Forms.CheckBox cb_onibus;
         private System.Windows.Forms.Button btn_transportesMarcados;
         private System.Windows.Forms.CheckBox cb_patinete;
+        public System.Windows.Forms.CheckBox cb_carro;
+        public System.Windows.Forms.CheckBox cb_aviao;
+        public System.Windows.Forms.CheckBox cb_navio;
+        public System.Windows.Forms.CheckBox cb_onibus;
+        private System.Windows.Forms.Button button1;
     }
 }

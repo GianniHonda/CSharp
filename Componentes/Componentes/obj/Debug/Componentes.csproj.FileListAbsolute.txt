@@ -11,3 +11,4 @@ D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.pdb
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_Veiculos.resources
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_CheckBox.resources
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_CheckedListBox.resources
+D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_filhoCheckBox.resources
