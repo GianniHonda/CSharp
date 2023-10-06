@@ -7,11 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Componentes
 {
-    public partial class F_Principal : System.Windows.Forms.Form
+    public partial class F_Principal : Form
     {
         public int num;
         public F_Principal()
@@ -28,8 +27,9 @@ namespace Componentes
                 tb_veiculo.Focus();
                 return;
             }
+
             tb_listaVeiculos.Text += tb_veiculo.Text + ", ";
-            //tb_listaVeiculos.Text = tb_listaVeiculos.Text + tb_veiculo.Text;
+            //tb_listaVeiculos.Text = tb_veiculo.Text + tb_veiculo.Text;
 
             tb_veiculo.Clear();
             tb_veiculo.Focus();
@@ -44,7 +44,7 @@ namespace Componentes
 
         private void btn_mostrar_Click(object sender, EventArgs e)
         {
-            F_Veiculos f_Veiculos = new F_Veiculos(tb_listaVeiculos.Text, this);
+            F_Veiculos f_Veiculos = new F_Veiculos(tb_listaVeiculos.Text,this);
             f_Veiculos.ShowDialog();
         }
 
@@ -53,15 +53,15 @@ namespace Componentes
             MessageBox.Show(num.ToString());
         }
 
-        private void checkBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        private void checkboxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CheckBox f_CheckBox = new CheckBox();
+            F_CheckBox f_CheckBox = new F_CheckBox();
             f_CheckBox.ShowDialog();
         }
 
         private void checkedListBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CheckedListBox f_CheckedListBox = new CheckedListBox();
+            F_CheckedListBox f_CheckedListBox=new F_CheckedListBox();
             f_CheckedListBox.ShowDialog();
         }
     }

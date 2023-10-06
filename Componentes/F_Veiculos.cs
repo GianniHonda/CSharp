@@ -17,14 +17,17 @@ namespace Componentes
         {
             InitializeComponent();
 
-            tb_listaVeiculos.Text = v;
+            tb_listaVeiculos.Text= v;
 
             fp = f;
-
             f.num = 10;
         }
+        private void F_Veiculos_Load(object sender, EventArgs e)
+        {
+           
+        }
 
-        private void F_Veiculos_FormClosing(object sender, FormClosingEventArgs e)
+        private void F_Veiculos_FormClosed(object sender, FormClosedEventArgs e)
         {
             fp.tb_listaVeiculos.Text = tb_listaVeiculos.Text;
         }
