@@ -42,6 +42,7 @@
             this.F_ComboBox = new System.Windows.Forms.ToolStripMenuItem();
             this.F_DateTimePicker = new System.Windows.Forms.ToolStripMenuItem();
             this.labelLinkLaberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,7 +129,8 @@
             this.checkedListBoxToolStripMenuItem,
             this.F_ComboBox,
             this.F_DateTimePicker,
-            this.labelLinkLaberToolStripMenuItem});
+            this.labelLinkLaberToolStripMenuItem,
+            this.listBoxToolStripMenuItem});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -167,6 +169,13 @@
             this.labelLinkLaberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.labelLinkLaberToolStripMenuItem.Text = "Label / LinkLaber";
             this.labelLinkLaberToolStripMenuItem.Click += new System.EventHandler(this.labelLinkLaberToolStripMenuItem_Click);
+            // 
+            // listBoxToolStripMenuItem
+            // 
+            this.listBoxToolStripMenuItem.Name = "listBoxToolStripMenuItem";
+            this.listBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listBoxToolStripMenuItem.Text = "ListBox";
+            this.listBoxToolStripMenuItem.Click += new System.EventHandler(this.listBoxToolStripMenuItem_Click);
             // 
             // F_Principal
             // 
@@ -210,6 +219,7 @@
         private System.Windows.Forms.ToolStripMenuItem F_ComboBox;
         private System.Windows.Forms.ToolStripMenuItem F_DateTimePicker;
         private System.Windows.Forms.ToolStripMenuItem labelLinkLaberToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listBoxToolStripMenuItem;
     }
 }
 

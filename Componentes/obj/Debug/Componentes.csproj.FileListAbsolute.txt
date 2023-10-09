@@ -15,3 +15,4 @@ D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_filhoC
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_ComboBox.resources
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_DateTimePicker.resources
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_LinkLabel.resources
+D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_ListBox.resources
