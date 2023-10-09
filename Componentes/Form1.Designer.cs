@@ -40,6 +40,7 @@
             this.checkboxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkedListBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.F_ComboBox = new System.Windows.Forms.ToolStripMenuItem();
+            this.F_DateTimePicker = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,7 +125,8 @@
             this.componentesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.checkboxToolStripMenuItem,
             this.checkedListBoxToolStripMenuItem,
-            this.F_ComboBox});
+            this.F_ComboBox,
+            this.F_DateTimePicker});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -149,6 +151,13 @@
             this.F_ComboBox.Size = new System.Drawing.Size(180, 22);
             this.F_ComboBox.Text = "ComboBox";
             this.F_ComboBox.Click += new System.EventHandler(this.F_ComboBox_Click);
+            // 
+            // F_DateTimePicker
+            // 
+            this.F_DateTimePicker.Name = "F_DateTimePicker";
+            this.F_DateTimePicker.Size = new System.Drawing.Size(180, 22);
+            this.F_DateTimePicker.Text = "DateTimePicker";
+            this.F_DateTimePicker.Click += new System.EventHandler(this.F_DateTimePicker_Click);
             // 
             // F_Principal
             // 
@@ -190,6 +199,7 @@
         private System.Windows.Forms.ToolStripMenuItem checkboxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkedListBoxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem F_ComboBox;
+        private System.Windows.Forms.ToolStripMenuItem F_DateTimePicker;
     }
 }
 

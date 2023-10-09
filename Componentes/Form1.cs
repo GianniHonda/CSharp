@@ -21,7 +21,7 @@ namespace Componentes
 
         private void btn_adicionar_Click(object sender, EventArgs e)
         {
-            if(tb_veiculo.Text == "")
+            if (tb_veiculo.Text == "")
             {
                 MessageBox.Show("Digite um veículo");
                 tb_veiculo.Focus();
@@ -44,7 +44,7 @@ namespace Componentes
 
         private void btn_mostrar_Click(object sender, EventArgs e)
         {
-            F_Veiculos f_Veiculos = new F_Veiculos(tb_listaVeiculos.Text,this);
+            F_Veiculos f_Veiculos = new F_Veiculos(tb_listaVeiculos.Text, this);
             f_Veiculos.ShowDialog();
         }
 
@@ -61,7 +61,7 @@ namespace Componentes
 
         private void checkedListBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            F_CheckedListBox f_CheckedListBox=new F_CheckedListBox();
+            F_CheckedListBox f_CheckedListBox = new F_CheckedListBox();
             f_CheckedListBox.ShowDialog();
         }
 
@@ -69,6 +69,12 @@ namespace Componentes
         {
             F_ComboBox f_ComboBox = new F_ComboBox();
             f_ComboBox.ShowDialog();
+        }
+
+        private void F_DateTimePicker_Click(object sender, EventArgs e)
+        {
+            F_DateTimePicker f_DateTimePicker = new F_DateTimePicker();
+            f_DateTimePicker.ShowDialog();
         }
     }
 }
