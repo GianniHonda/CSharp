@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,12 @@ namespace Componentes
             lb_carros.DataSource = carros;
         }
 
+        private void atualizaLB(ListBox lb, List<string> l)
+        {
+            lb.DataSource = null;
+            lb.DataSource = l;
+        }
+
         private void btn_add_Click(object sender, EventArgs e)
         {
             if (tb_carro.Text == "")
@@ -35,16 +42,14 @@ namespace Componentes
             {
                 carros.Add(tb_carro.Text);
                 tb_carro.Clear();
-                lb_carros.DataSource = null;
-                lb_carros.DataSource = carros;
+                atualizaLB(lb_carros,carros);
             }
         }
 
         private void btn_remover_Click(object sender, EventArgs e)
         {
             carros.RemoveAt(lb_carros.SelectedIndex);
-            lb_carros.DataSource = null;
-            lb_carros.DataSource = carros;
+            atualizaLB(lb_carros, carros);
         }
 
         private void btn_obter_Click(object sender, EventArgs e)
@@ -55,8 +60,7 @@ namespace Componentes
         private void tb_limpar_Click(object sender, EventArgs e)
         {
             carros.Clear();
-            lb_carros.DataSource = null;
-            lb_carros.DataSource = carros;
+            atualizaLB(lb_carros, carros);
         }
     }
 }

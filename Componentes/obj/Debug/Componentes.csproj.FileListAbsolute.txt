@@ -16,3 +16,4 @@ D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_ComboB
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_DateTimePicker.resources
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_LinkLabel.resources
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_ListBox.resources
+D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_ListView.resources
