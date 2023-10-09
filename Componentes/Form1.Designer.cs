@@ -41,6 +41,7 @@
             this.checkedListBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.F_ComboBox = new System.Windows.Forms.ToolStripMenuItem();
             this.F_DateTimePicker = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelLinkLaberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,7 +127,8 @@
             this.checkboxToolStripMenuItem,
             this.checkedListBoxToolStripMenuItem,
             this.F_ComboBox,
-            this.F_DateTimePicker});
+            this.F_DateTimePicker,
+            this.labelLinkLaberToolStripMenuItem});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -158,6 +160,13 @@
             this.F_DateTimePicker.Size = new System.Drawing.Size(180, 22);
             this.F_DateTimePicker.Text = "DateTimePicker";
             this.F_DateTimePicker.Click += new System.EventHandler(this.F_DateTimePicker_Click);
+            // 
+            // labelLinkLaberToolStripMenuItem
+            // 
+            this.labelLinkLaberToolStripMenuItem.Name = "labelLinkLaberToolStripMenuItem";
+            this.labelLinkLaberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.labelLinkLaberToolStripMenuItem.Text = "Label / LinkLaber";
+            this.labelLinkLaberToolStripMenuItem.Click += new System.EventHandler(this.labelLinkLaberToolStripMenuItem_Click);
             // 
             // F_Principal
             // 
@@ -200,6 +209,7 @@
         private System.Windows.Forms.ToolStripMenuItem checkedListBoxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem F_ComboBox;
         private System.Windows.Forms.ToolStripMenuItem F_DateTimePicker;
+        private System.Windows.Forms.ToolStripMenuItem labelLinkLaberToolStripMenuItem;
     }
 }
 
