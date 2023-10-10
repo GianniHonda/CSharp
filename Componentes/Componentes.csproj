@@ -124,6 +124,12 @@
     <Compile Include="F_PictureBox.Designer.cs">
       <DependentUpon>F_PictureBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_ProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ProgressBar.Designer.cs">
+      <DependentUpon>F_ProgressBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_Veiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_PictureBox.resx">
       <DependentUpon>F_PictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ProgressBar.resx">
+      <DependentUpon>F_ProgressBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_Veiculos.resx">
       <DependentUpon>F_Veiculos.cs</DependentUpon>
