@@ -106,5 +106,20 @@ namespace Componentes
             F_MonthCalendar f_MonthCalendar = new F_MonthCalendar();
             f_MonthCalendar.ShowDialog();
         }
+
+        private void MenuNotificacoes_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem.Name.ToString() == "tsmi_Fechar")
+            {
+                this.Close();
+            }else if (e.ClickedItem.Name.ToString() == "tsmi_Restaurar")
+            {
+                this.WindowState= FormWindowState.Normal;
+            }
+            else if (e.ClickedItem.Name.ToString() == "tsmi_Mensagem")
+            {
+                MessageBox.Show("CFB Cursos - Curso de C#");
+            }
+        }
     }
 }
