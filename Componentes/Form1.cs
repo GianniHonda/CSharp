@@ -121,5 +121,11 @@ namespace Componentes
                 MessageBox.Show("CFB Cursos - Curso de C#");
             }
         }
+
+        private void numericUpDownToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_NumericUpDown f_NumericUpDown = new F_NumericUpDown();
+            f_NumericUpDown.ShowDialog();
+        }
     }
 }
