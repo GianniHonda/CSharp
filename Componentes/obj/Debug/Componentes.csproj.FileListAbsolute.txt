@@ -20,3 +20,4 @@ D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_ListVi
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_MaskedTextBox.resources
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_MonthCalendar.resources
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_NumericUpDown.resources
+D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_PictureBox.resources
