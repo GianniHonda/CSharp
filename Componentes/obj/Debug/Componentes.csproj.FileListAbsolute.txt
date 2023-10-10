@@ -22,3 +22,4 @@ D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_MonthC
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_NumericUpDown.resources
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_PictureBox.resources
 D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_ProgressBar.resources
+D:\C#\Aulas\Parte2\Aula60\Componentes\Componentes\obj\Debug\Componentes.F_RadioButton.resources

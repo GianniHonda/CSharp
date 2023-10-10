@@ -130,6 +130,12 @@
     <Compile Include="F_ProgressBar.Designer.cs">
       <DependentUpon>F_ProgressBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_RadioButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_RadioButton.Designer.cs">
+      <DependentUpon>F_RadioButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_Veiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_ProgressBar.resx">
       <DependentUpon>F_ProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_RadioButton.resx">
+      <DependentUpon>F_RadioButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_Veiculos.resx">
       <DependentUpon>F_Veiculos.cs</DependentUpon>
