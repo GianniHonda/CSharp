@@ -1,0 +1,10 @@
+D:\C#\Aulas\Parte2\Aplicativo\Aplicativo\bin\Debug\Aplicativo.exe.config
+D:\C#\Aulas\Parte2\Aplicativo\Aplicativo\bin\Debug\Aplicativo.exe
+D:\C#\Aulas\Parte2\Aplicativo\Aplicativo\bin\Debug\Aplicativo.pdb
+D:\C#\Aulas\Parte2\Aplicativo\Aplicativo\obj\Debug\Aplicativo.csproj.AssemblyReference.cache
+D:\C#\Aulas\Parte2\Aplicativo\Aplicativo\obj\Debug\Aplicativo.Form1.resources
+D:\C#\Aulas\Parte2\Aplicativo\Aplicativo\obj\Debug\Aplicativo.Properties.Resources.resources
+D:\C#\Aulas\Parte2\Aplicativo\Aplicativo\obj\Debug\Aplicativo.csproj.GenerateResource.cache
+D:\C#\Aulas\Parte2\Aplicativo\Aplicativo\obj\Debug\Aplicativo.csproj.CoreCompileInputs.cache
+D:\C#\Aulas\Parte2\Aplicativo\Aplicativo\obj\Debug\Aplicativo.exe
+D:\C#\Aulas\Parte2\Aplicativo\Aplicativo\obj\Debug\Aplicativo.pdb
