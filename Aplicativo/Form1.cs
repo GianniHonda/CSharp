@@ -104,5 +104,131 @@ namespace Aplicativo
         {
             Abrir();
         }
+
+        private void Copiar()
+        {
+            if(richTextBox1.SelectionLength > 0) 
+            {
+                richTextBox1.Copy();
+            }
+        }
+
+        private void Colar()
+        {
+            richTextBox1.Paste();
+        }
+
+        private void btn_copiar_Click(object sender, EventArgs e)
+        {
+            Copiar();
+        }
+
+        private void btn_colar_Click(object sender, EventArgs e)
+        {
+            Colar();
+        }
+
+        private void copiarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Copiar();
+        }
+
+        private void colarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Colar();
+        }
+
+        private void Negrito()
+        {
+            string nome_da_fonte = null;
+            float tamanho_da_fonte = 0;
+            bool negri = false;
+
+            nome_da_fonte = richTextBox1.Font.Name;
+            tamanho_da_fonte = richTextBox1.Font.Size;
+            negri = richTextBox1.Font.Bold;
+            
+            
+            if (negri == false)
+            {
+                richTextBox1.SelectionFont = new Font(nome_da_fonte,tamanho_da_fonte,FontStyle.Bold);
+            }
+            else
+            {
+                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Regular);
+            }
+        }
+
+        private void Italico()
+        {
+            string nome_da_fonte = null;
+            float tamanho_da_fonte = 0;
+            bool ita = false;
+
+            nome_da_fonte = richTextBox1.Font.Name;
+            tamanho_da_fonte = richTextBox1.Font.Size;
+            ita = richTextBox1.Font.Italic;
+
+
+            if (ita == false)
+            {
+                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic);
+            }
+            else
+            {
+                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Italic);
+            }
+        }
+
+        private void Sublinhado()
+        {
+            string nome_da_fonte = null;
+            float tamanho_da_fonte = 0;
+            bool sub = false;
+
+            nome_da_fonte = richTextBox1.Font.Name;
+            tamanho_da_fonte = richTextBox1.Font.Size;
+            sub = richTextBox1.Font.Underline;
+
+
+            if (sub == false)
+            {
+                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Underline);
+            }
+            else
+            {
+                richTextBox1.SelectionFont = new Font(nome_da_fonte, tamanho_da_fonte, FontStyle.Underline);
+            }
+        }
+
+        private void btn_negrito_Click(object sender, EventArgs e)
+        {
+            Negrito();
+        }
+
+        private void btn_italico_Click(object sender, EventArgs e)
+        {
+            Italico();
+        }
+
+        private void btn_sublinhado_Click(object sender, EventArgs e)
+        {
+            Sublinhado();
+        }
+
+        private void negritoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Negrito();
+        }
+
+        private void itálicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Italico();
+        }
+
+        private void sublinhadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sublinhado();
+        }
     }
 }
