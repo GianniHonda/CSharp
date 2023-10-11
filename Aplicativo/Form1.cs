@@ -288,6 +288,33 @@ namespace Aplicativo
             }
         }
 
+        private void imprimir()
+        {
+            printDialog1.Document = printDocument1;
+            string texto = this.richTextBox1.Text;
+            leitura=new StringReader(texto);
+            if (printDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this.printDocument1.Print();
+            }
+
+        }
+
+        private void alinharEsquerda()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
+        }
+
+        private void alinharDireita()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
+        }
+
+        private void alinharCentro()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
+        }
+
         private void btn_negrito_Click(object sender, EventArgs e)
         {
             Negrito();
@@ -316,6 +343,62 @@ namespace Aplicativo
         private void sublinhadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Sublinhado();
+        }
+
+        private void btn_esquerda_Click(object sender, EventArgs e)
+        {
+            alinharEsquerda();
+        }
+
+        private void esquerdaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            alinharEsquerda();
+        }
+
+        private void btn_direita_Click(object sender, EventArgs e)
+        {
+            alinharDireita();
+        }
+
+        private void direitaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            alinharDireita();
+        }
+
+        private void btn_centro_Click(object sender, EventArgs e)
+        {
+            alinharCentro();
+        }
+
+        private void centralizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            alinharCentro();
+        }
+
+        private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            imprimir();
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            float linhasPagina = 0;
+            float PosY = 0;
+            int cont = 0;
+            float margemEsquerda = e.MarginBounds.Left - 50;
+            float margemSuperior = e.MarginBounds.Top - 50;
+            if(margemEsquerda < 5)
+            {
+                margemEsquerda = 20;
+            }
+
+            if (margemSuperior < 5)
+            {
+                margemEsquerda = 20;
+            }
+            string linha = null;
+            Font fonte = this.richTextBox1.Font;
+            SolidBrush pincel = new SolidBrush(Color.Black);
         }
     }
 }
