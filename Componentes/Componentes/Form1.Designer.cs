@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Principal));
             this.btn_adicionar = new System.Windows.Forms.Button();
             this.tb_veiculo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,7 +41,25 @@
             this.componentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkboxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkedListBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.F_ComboBox = new System.Windows.Forms.ToolStripMenuItem();
+            this.F_DateTimePicker = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelLinkLaberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maskedTextBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.monthCalendarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.numericUpDownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.progressBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.radioButtonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.MenuNotificacoes = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tsmi_Restaurar = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi_Mensagem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi_Fechar = new System.Windows.Forms.ToolStripMenuItem();
+            this.trackBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            this.MenuNotificacoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_adicionar
@@ -122,7 +142,19 @@
             // 
             this.componentesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.checkboxToolStripMenuItem,
-            this.checkedListBoxToolStripMenuItem});
+            this.checkedListBoxToolStripMenuItem,
+            this.F_ComboBox,
+            this.F_DateTimePicker,
+            this.labelLinkLaberToolStripMenuItem,
+            this.listBoxToolStripMenuItem,
+            this.listViewToolStripMenuItem,
+            this.maskedTextBoxToolStripMenuItem,
+            this.monthCalendarToolStripMenuItem,
+            this.numericUpDownToolStripMenuItem,
+            this.pictureBoxToolStripMenuItem,
+            this.progressBarToolStripMenuItem,
+            this.radioButtonToolStripMenuItem,
+            this.trackBarToolStripMenuItem});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -140,6 +172,125 @@
             this.checkedListBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.checkedListBoxToolStripMenuItem.Text = "CheckedListBox";
             this.checkedListBoxToolStripMenuItem.Click += new System.EventHandler(this.checkedListBoxToolStripMenuItem_Click);
+            // 
+            // F_ComboBox
+            // 
+            this.F_ComboBox.Name = "F_ComboBox";
+            this.F_ComboBox.Size = new System.Drawing.Size(180, 22);
+            this.F_ComboBox.Text = "ComboBox";
+            this.F_ComboBox.Click += new System.EventHandler(this.F_ComboBox_Click);
+            // 
+            // F_DateTimePicker
+            // 
+            this.F_DateTimePicker.Name = "F_DateTimePicker";
+            this.F_DateTimePicker.Size = new System.Drawing.Size(180, 22);
+            this.F_DateTimePicker.Text = "DateTimePicker";
+            this.F_DateTimePicker.Click += new System.EventHandler(this.F_DateTimePicker_Click);
+            // 
+            // labelLinkLaberToolStripMenuItem
+            // 
+            this.labelLinkLaberToolStripMenuItem.Name = "labelLinkLaberToolStripMenuItem";
+            this.labelLinkLaberToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.labelLinkLaberToolStripMenuItem.Text = "Label / LinkLaber";
+            this.labelLinkLaberToolStripMenuItem.Click += new System.EventHandler(this.labelLinkLaberToolStripMenuItem_Click);
+            // 
+            // listBoxToolStripMenuItem
+            // 
+            this.listBoxToolStripMenuItem.Name = "listBoxToolStripMenuItem";
+            this.listBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listBoxToolStripMenuItem.Text = "ListBox";
+            this.listBoxToolStripMenuItem.Click += new System.EventHandler(this.listBoxToolStripMenuItem_Click);
+            // 
+            // listViewToolStripMenuItem
+            // 
+            this.listViewToolStripMenuItem.Name = "listViewToolStripMenuItem";
+            this.listViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listViewToolStripMenuItem.Text = "ListView";
+            this.listViewToolStripMenuItem.Click += new System.EventHandler(this.listViewToolStripMenuItem_Click);
+            // 
+            // maskedTextBoxToolStripMenuItem
+            // 
+            this.maskedTextBoxToolStripMenuItem.Name = "maskedTextBoxToolStripMenuItem";
+            this.maskedTextBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.maskedTextBoxToolStripMenuItem.Text = "MaskedTextBox";
+            this.maskedTextBoxToolStripMenuItem.Click += new System.EventHandler(this.maskedTextBoxToolStripMenuItem_Click);
+            // 
+            // monthCalendarToolStripMenuItem
+            // 
+            this.monthCalendarToolStripMenuItem.Name = "monthCalendarToolStripMenuItem";
+            this.monthCalendarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.monthCalendarToolStripMenuItem.Text = "MonthCalendar";
+            this.monthCalendarToolStripMenuItem.Click += new System.EventHandler(this.monthCalendarToolStripMenuItem_Click);
+            // 
+            // numericUpDownToolStripMenuItem
+            // 
+            this.numericUpDownToolStripMenuItem.Name = "numericUpDownToolStripMenuItem";
+            this.numericUpDownToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.numericUpDownToolStripMenuItem.Text = "NumericUpDown";
+            this.numericUpDownToolStripMenuItem.Click += new System.EventHandler(this.numericUpDownToolStripMenuItem_Click);
+            // 
+            // pictureBoxToolStripMenuItem
+            // 
+            this.pictureBoxToolStripMenuItem.Name = "pictureBoxToolStripMenuItem";
+            this.pictureBoxToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pictureBoxToolStripMenuItem.Text = "PictureBox";
+            this.pictureBoxToolStripMenuItem.Click += new System.EventHandler(this.pictureBoxToolStripMenuItem_Click);
+            // 
+            // progressBarToolStripMenuItem
+            // 
+            this.progressBarToolStripMenuItem.Name = "progressBarToolStripMenuItem";
+            this.progressBarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.progressBarToolStripMenuItem.Text = "ProgressBar";
+            this.progressBarToolStripMenuItem.Click += new System.EventHandler(this.progressBarToolStripMenuItem_Click);
+            // 
+            // radioButtonToolStripMenuItem
+            // 
+            this.radioButtonToolStripMenuItem.Name = "radioButtonToolStripMenuItem";
+            this.radioButtonToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.radioButtonToolStripMenuItem.Text = "RadioButton";
+            this.radioButtonToolStripMenuItem.Click += new System.EventHandler(this.radioButtonToolStripMenuItem_Click);
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.ContextMenuStrip = this.MenuNotificacoes;
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "CFB Cursos";
+            this.notifyIcon1.Visible = true;
+            // 
+            // MenuNotificacoes
+            // 
+            this.MenuNotificacoes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmi_Restaurar,
+            this.tsmi_Mensagem,
+            this.tsmi_Fechar});
+            this.MenuNotificacoes.Name = "MenuNotificacoes";
+            this.MenuNotificacoes.Size = new System.Drawing.Size(134, 70);
+            this.MenuNotificacoes.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuNotificacoes_ItemClicked);
+            // 
+            // tsmi_Restaurar
+            // 
+            this.tsmi_Restaurar.Name = "tsmi_Restaurar";
+            this.tsmi_Restaurar.Size = new System.Drawing.Size(133, 22);
+            this.tsmi_Restaurar.Text = "Restaurar";
+            // 
+            // tsmi_Mensagem
+            // 
+            this.tsmi_Mensagem.Name = "tsmi_Mensagem";
+            this.tsmi_Mensagem.Size = new System.Drawing.Size(133, 22);
+            this.tsmi_Mensagem.Text = "Mensagem";
+            // 
+            // tsmi_Fechar
+            // 
+            this.tsmi_Fechar.Name = "tsmi_Fechar";
+            this.tsmi_Fechar.Size = new System.Drawing.Size(133, 22);
+            this.tsmi_Fechar.Text = "Fechar";
+            // 
+            // trackBarToolStripMenuItem
+            // 
+            this.trackBarToolStripMenuItem.Name = "trackBarToolStripMenuItem";
+            this.trackBarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.trackBarToolStripMenuItem.Text = "TrackBar";
+            this.trackBarToolStripMenuItem.Click += new System.EventHandler(this.trackBarToolStripMenuItem_Click);
             // 
             // F_Principal
             // 
@@ -162,6 +313,7 @@
             this.Text = "Componentes - CFB Cursos";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.MenuNotificacoes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,6 +332,23 @@
         private System.Windows.Forms.ToolStripMenuItem componentesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkboxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkedListBoxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem F_ComboBox;
+        private System.Windows.Forms.ToolStripMenuItem F_DateTimePicker;
+        private System.Windows.Forms.ToolStripMenuItem labelLinkLaberToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listBoxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listViewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem maskedTextBoxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem monthCalendarToolStripMenuItem;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ContextMenuStrip MenuNotificacoes;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_Restaurar;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_Mensagem;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_Fechar;
+        private System.Windows.Forms.ToolStripMenuItem numericUpDownToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pictureBoxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem progressBarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem radioButtonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem trackBarToolStripMenuItem;
     }
 }
 

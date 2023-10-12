@@ -64,11 +64,83 @@
     <Compile Include="F_CheckedListBox.Designer.cs">
       <DependentUpon>F_CheckedListBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_ComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ComboBox.Designer.cs">
+      <DependentUpon>F_ComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_DateTimePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_DateTimePicker.Designer.cs">
+      <DependentUpon>F_DateTimePicker.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_filhoCheckBox.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="F_filhoCheckBox.Designer.cs">
       <DependentUpon>F_filhoCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_LinkLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_LinkLabel.Designer.cs">
+      <DependentUpon>F_LinkLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_ListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ListBox.Designer.cs">
+      <DependentUpon>F_ListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_ListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ListView.Designer.cs">
+      <DependentUpon>F_ListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_MaskedTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_MaskedTextBox.Designer.cs">
+      <DependentUpon>F_MaskedTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_MonthCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_MonthCalendar.Designer.cs">
+      <DependentUpon>F_MonthCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_NumericUpDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_NumericUpDown.Designer.cs">
+      <DependentUpon>F_NumericUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_PictureBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_PictureBox.Designer.cs">
+      <DependentUpon>F_PictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_ProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ProgressBar.Designer.cs">
+      <DependentUpon>F_ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_RadioButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_RadioButton.Designer.cs">
+      <DependentUpon>F_RadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_TrackBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TrackBar.Designer.cs">
+      <DependentUpon>F_TrackBar.cs</DependentUpon>
     </Compile>
     <Compile Include="F_Veiculos.cs">
       <SubType>Form</SubType>
@@ -87,8 +159,44 @@
     <EmbeddedResource Include="F_CheckedListBox.resx">
       <DependentUpon>F_CheckedListBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_ComboBox.resx">
+      <DependentUpon>F_ComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_DateTimePicker.resx">
+      <DependentUpon>F_DateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_filhoCheckBox.resx">
       <DependentUpon>F_filhoCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_LinkLabel.resx">
+      <DependentUpon>F_LinkLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ListBox.resx">
+      <DependentUpon>F_ListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ListView.resx">
+      <DependentUpon>F_ListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_MaskedTextBox.resx">
+      <DependentUpon>F_MaskedTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_MonthCalendar.resx">
+      <DependentUpon>F_MonthCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_NumericUpDown.resx">
+      <DependentUpon>F_NumericUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_PictureBox.resx">
+      <DependentUpon>F_PictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ProgressBar.resx">
+      <DependentUpon>F_ProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_RadioButton.resx">
+      <DependentUpon>F_RadioButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TrackBar.resx">
+      <DependentUpon>F_TrackBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_Veiculos.resx">
       <DependentUpon>F_Veiculos.cs</DependentUpon>
@@ -101,6 +209,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -111,9 +220,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\30.webp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rabisco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1243871.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
