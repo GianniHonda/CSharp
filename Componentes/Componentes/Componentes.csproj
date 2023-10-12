@@ -142,6 +142,12 @@
     <Compile Include="F_TrackBar.Designer.cs">
       <DependentUpon>F_TrackBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_TreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TreeView.Designer.cs">
+      <DependentUpon>F_TreeView.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_Veiculos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_TrackBar.resx">
       <DependentUpon>F_TrackBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TreeView.resx">
+      <DependentUpon>F_TreeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_Veiculos.resx">
       <DependentUpon>F_Veiculos.cs</DependentUpon>

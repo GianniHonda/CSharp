@@ -58,6 +58,7 @@
             this.tsmi_Mensagem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_Fechar = new System.Windows.Forms.ToolStripMenuItem();
             this.trackBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.treeViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.MenuNotificacoes.SuspendLayout();
             this.SuspendLayout();
@@ -154,7 +155,8 @@
             this.pictureBoxToolStripMenuItem,
             this.progressBarToolStripMenuItem,
             this.radioButtonToolStripMenuItem,
-            this.trackBarToolStripMenuItem});
+            this.trackBarToolStripMenuItem,
+            this.treeViewToolStripMenuItem});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -292,6 +294,13 @@
             this.trackBarToolStripMenuItem.Text = "TrackBar";
             this.trackBarToolStripMenuItem.Click += new System.EventHandler(this.trackBarToolStripMenuItem_Click);
             // 
+            // treeViewToolStripMenuItem
+            // 
+            this.treeViewToolStripMenuItem.Name = "treeViewToolStripMenuItem";
+            this.treeViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.treeViewToolStripMenuItem.Text = "TreeView";
+            this.treeViewToolStripMenuItem.Click += new System.EventHandler(this.treeViewToolStripMenuItem_Click);
+            // 
             // F_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,6 +358,7 @@
         private System.Windows.Forms.ToolStripMenuItem progressBarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem radioButtonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trackBarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem treeViewToolStripMenuItem;
     }
 }
 
