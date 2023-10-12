@@ -142,6 +142,12 @@
     <Compile Include="F_SplitContainer.Designer.cs">
       <DependentUpon>F_SplitContainer.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_TabControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_TabControl.Designer.cs">
+      <DependentUpon>F_TabControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_TrackBar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_SplitContainer.resx">
       <DependentUpon>F_SplitContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_TabControl.resx">
+      <DependentUpon>F_TabControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_TrackBar.resx">
       <DependentUpon>F_TrackBar.cs</DependentUpon>
