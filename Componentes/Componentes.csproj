@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_Backgroundworker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Backgroundworker.Designer.cs">
+      <DependentUpon>F_Backgroundworker.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_CheckBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Backgroundworker.resx">
+      <DependentUpon>F_Backgroundworker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_CheckBox.resx">
       <DependentUpon>F_CheckBox.cs</DependentUpon>
