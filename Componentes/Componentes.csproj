@@ -154,6 +154,12 @@
     <Compile Include="F_TableLayoutPanel.Designer.cs">
       <DependentUpon>F_TableLayoutPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_ToolStripContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ToolStripContainer.Designer.cs">
+      <DependentUpon>F_ToolStripContainer.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_TrackBar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_TableLayoutPanel.resx">
       <DependentUpon>F_TableLayoutPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ToolStripContainer.resx">
+      <DependentUpon>F_ToolStripContainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_TrackBar.resx">
       <DependentUpon>F_TrackBar.cs</DependentUpon>
