@@ -160,6 +160,12 @@
     <Compile Include="F_TableLayoutPanel.Designer.cs">
       <DependentUpon>F_TableLayoutPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_Timer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Timer.Designer.cs">
+      <DependentUpon>F_Timer.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_ToolStripContainer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +255,9 @@
     <EmbeddedResource Include="F_TableLayoutPanel.resx">
       <DependentUpon>F_TableLayoutPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_Timer.resx">
+      <DependentUpon>F_Timer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_ToolStripContainer.resx">
       <DependentUpon>F_ToolStripContainer.cs</DependentUpon>
     </EmbeddedResource>
@@ -296,6 +305,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1243871.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\143edb930af76ba.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
