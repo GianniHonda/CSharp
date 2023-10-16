@@ -33,5 +33,74 @@ namespace CFB_Academia
             Globais.nivel = 0;
             Globais.logado = false;
         }
+
+        private void bancoDeDadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado)
+            {
+                if(Globais.nivel >= 2) //procedimentos da janela
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido");
+                }
+            }
+            else
+            {
+                MessageBox.Show("É necessário ter um usuário logado");
+            }
+        }
+
+        private void novoUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado)
+            {
+                if (Globais.nivel >= 1) //procedimentos da janela
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido");
+                }
+            }
+            else
+            {
+                MessageBox.Show("É necessário ter um usuário logado");
+            }
+        }
+
+        private void gestãoDeUsuáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado)
+            {
+                if (Globais.nivel >= 1) //procedimentos da janela
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido");
+                }
+            }
+            else
+            {
+                MessageBox.Show("É necessário ter um usuário logado");
+            }
+        }
+
+        private void novoAlunoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Globais.logado)
+            {
+                //procedimentos vem diretamente aqui
+            }
+            else
+            {
+                MessageBox.Show("É necessário ter um usuário logado");
+            }
+        }
     }
 }
