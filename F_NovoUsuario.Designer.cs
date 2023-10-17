@@ -42,7 +42,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_novo = new System.Windows.Forms.Button();
+            this.tb_novo = new System.Windows.Forms.Button();
             this.btn_salvar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_fechar = new System.Windows.Forms.Button();
@@ -86,6 +86,7 @@
             // 
             this.tb_senha.Location = new System.Drawing.Point(333, 30);
             this.tb_senha.Name = "tb_senha";
+            this.tb_senha.PasswordChar = '*';
             this.tb_senha.Size = new System.Drawing.Size(101, 20);
             this.tb_senha.TabIndex = 5;
             // 
@@ -113,7 +114,7 @@
             // n_nivel
             // 
             this.n_nivel.Location = new System.Drawing.Point(119, 78);
-            this.n_nivel.Minimum = new decimal(new int[] {
+            this.n_nivel.Maximum = new decimal(new int[] {
             2,
             0,
             0,
@@ -177,22 +178,23 @@
             this.panel1.Controls.Add(this.btn_fechar);
             this.panel1.Controls.Add(this.btn_cancelar);
             this.panel1.Controls.Add(this.btn_salvar);
-            this.panel1.Controls.Add(this.btn_novo);
+            this.panel1.Controls.Add(this.tb_novo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 132);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(437, 31);
             this.panel1.TabIndex = 13;
             // 
-            // btn_novo
+            // tb_novo
             // 
-            this.btn_novo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_novo.Location = new System.Drawing.Point(4, 4);
-            this.btn_novo.Name = "btn_novo";
-            this.btn_novo.Size = new System.Drawing.Size(75, 23);
-            this.btn_novo.TabIndex = 0;
-            this.btn_novo.Text = "Novo";
-            this.btn_novo.UseVisualStyleBackColor = true;
+            this.tb_novo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tb_novo.Location = new System.Drawing.Point(4, 4);
+            this.tb_novo.Name = "tb_novo";
+            this.tb_novo.Size = new System.Drawing.Size(75, 23);
+            this.tb_novo.TabIndex = 0;
+            this.tb_novo.Text = "Novo";
+            this.tb_novo.UseVisualStyleBackColor = true;
+            this.tb_novo.Click += new System.EventHandler(this.tb_novo_Click);
             // 
             // btn_salvar
             // 
@@ -214,6 +216,7 @@
             this.btn_cancelar.TabIndex = 2;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btn_fechar
             // 
@@ -224,6 +227,7 @@
             this.btn_fechar.TabIndex = 3;
             this.btn_fechar.Text = "Fechar";
             this.btn_fechar.UseVisualStyleBackColor = true;
+            this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
             // 
             // F_NovoUsuario
             // 
@@ -276,6 +280,6 @@
         private System.Windows.Forms.Button btn_fechar;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.Button btn_salvar;
-        private System.Windows.Forms.Button btn_novo;
+        private System.Windows.Forms.Button tb_novo;
     }
 }

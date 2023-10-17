@@ -26,7 +26,34 @@ namespace CFB_Academia
             usuario.status = cb_status.Text;
             usuario.nivel = Convert.ToInt32(Math.Round(n_nivel.Value,0));
 
+            Banco.NovoUsuario(usuario);
 
+        }
+
+        private void btn_fechar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            tb_nome.Clear();
+            tb_userName.Clear();
+            tb_senha.Clear();
+            cb_status.Text = "";
+            n_nivel.Value = 0;
+            tb_nome.Focus();
+            
+        }
+
+        private void tb_novo_Click(object sender, EventArgs e)
+        {
+            tb_nome.Clear();
+            tb_userName.Clear();
+            tb_senha.Clear();
+            cb_status.Text = "";
+            n_nivel.Value = 0;
+            tb_nome.Focus();
         }
     }
 }
