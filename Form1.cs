@@ -79,7 +79,8 @@ namespace CFB_Academia
             {
                 if (Globais.nivel >= 1) //procedimentos da janela
                 {
-
+                    F_GestaoUsuarios f_GestaoUsuarios = new F_GestaoUsuarios(); 
+                    f_GestaoUsuarios.ShowDialog();
                 }
                 else
                 {
