@@ -14,12 +14,61 @@ namespace CFB_Academia
     {
         private static SQLiteConnection conexao;
 
+        //funções genéricas
+
         private static SQLiteConnection ConexaoBanco()
         {
-            conexao = new SQLiteConnection("Data Source=D:\\C#\\Aulas\\Parte2\\CFB_Academia\\CFB_Academia\\banco\\banco_academia");
+            conexao = new SQLiteConnection("Data Source="+Globais.caminhoBanco + Globais.nomeBanco);
             conexao.Open();
             return conexao;
         }
+        public static DataTable dql(string sql)//data query language (Select)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = sql;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                vcon.Close();
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static void dml(string q, string msgOK=null, string msgERRO=null) //data manipulation language (insert, delete and update)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = q;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+                if(msgOK != null)
+                {
+                    MessageBox.Show(msgOK);
+                }
+            }
+            catch (Exception ex)
+            {
+                if(msgERRO != null)
+                {
+                    MessageBox.Show(msgERRO + "\n" + ex.Message);
+                }
+                throw ex;
+            }
+        }
+
 
         public static DataTable ObterTodosUsuarios()
         {
@@ -37,26 +86,6 @@ namespace CFB_Academia
                 
             }catch (Exception ex)
             {
-                throw ex;
-            }
-        }
-
-        public static DataTable consulta(string sql)
-        {
-            SQLiteDataAdapter da = null;
-            DataTable dt = new DataTable();
-            try
-            {
-                var vcon = ConexaoBanco();
-                var cmd = vcon.CreateCommand();
-                cmd.CommandText = sql;
-                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
-                da.Fill(dt);
-                vcon.Close();
-                return dt;
-            }
-            catch (Exception ex)
-            { 
                 throw ex;
             }
         }
@@ -132,7 +161,7 @@ namespace CFB_Academia
             {
                 var vcon = ConexaoBanco();
                 var cmd = vcon.CreateCommand();
-                cmd.CommandText = "DELETE FROM tb_usuarios WHERE N_IDUSUARIO=" + id;
+                cmd.CommandText = "DELETE FROM tb_usuarios WHERE N_IDUSUARIO=" + id; 
                 da = new SQLiteDataAdapter(cmd.CommandText, vcon);
                 cmd.ExecuteNonQuery();
                 vcon.Close();

@@ -11,6 +11,9 @@ namespace CFB_Academia
         public static string versao="1.0";
         public static Boolean logado=false;
         public static int nivel=0; //0=Básico - 1=Gerente - 2=Master
+        public static string caminho = System.Environment.CurrentDirectory;
+        public static string nomeBanco = "banco_academia";
+        public static string caminhoBanco = caminho+@"\banco\";
 
         /*
         tb_usuarios
