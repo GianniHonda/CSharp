@@ -105,6 +105,44 @@ namespace CFB_Academia
             }
         }
 
+        public static void AtualizarUsuario(Usuario u)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "UPDATE tb_usuarios SET T_NOMEUSUARIO='"+u.nome+ "', T_USERNAME='"+u.username+ "', T_SENHAUSUARIO='"+u.senha+ "', T_STATUSUSUARIO='"+u.status+"', N_NIVELUSUARIO="+u.nivel+" WHERE N_IDUSUARIO="+u.id;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static void DeletarUsuario(string id)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConexaoBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "DELETE FROM tb_usuarios WHERE N_IDUSUARIO=" + id;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         //FIM Funções do FORM F_GestaoUsuarios
 
         //funções do FORM F_NovoUsuario
