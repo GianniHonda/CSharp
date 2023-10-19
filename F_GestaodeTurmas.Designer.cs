@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_turmas = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_nomeTurma = new System.Windows.Forms.Button();
@@ -57,14 +57,14 @@
             // 
             this.dgv_turmas.AllowUserToAddRows = false;
             this.dgv_turmas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_turmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_turmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_turmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_turmas.EnableHeadersVisualStyles = false;
             this.dgv_turmas.Location = new System.Drawing.Point(3, 3);
@@ -96,7 +96,7 @@
             this.btn_nomeTurma.Name = "btn_nomeTurma";
             this.btn_nomeTurma.Size = new System.Drawing.Size(108, 23);
             this.btn_nomeTurma.TabIndex = 0;
-            this.btn_nomeTurma.Text = "Nome Turma";
+            this.btn_nomeTurma.Text = "Nova Turma";
             this.btn_nomeTurma.UseVisualStyleBackColor = true;
             this.btn_nomeTurma.Click += new System.EventHandler(this.btn_nomeTurma_Click);
             // 
@@ -155,6 +155,7 @@
             this.cb_professor.Name = "cb_professor";
             this.cb_professor.Size = new System.Drawing.Size(218, 21);
             this.cb_professor.TabIndex = 2;
+            this.cb_professor.SelectedIndexChanged += new System.EventHandler(this.cb_professor_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -181,6 +182,7 @@
             this.cb_status.Name = "cb_status";
             this.cb_status.Size = new System.Drawing.Size(95, 21);
             this.cb_status.TabIndex = 4;
+            this.cb_status.SelectedIndexChanged += new System.EventHandler(this.cb_status_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -198,6 +200,7 @@
             this.cb_horario.Name = "cb_horario";
             this.cb_horario.Size = new System.Drawing.Size(215, 21);
             this.cb_horario.TabIndex = 5;
+            this.cb_horario.SelectedIndexChanged += new System.EventHandler(this.cb_horario_SelectedIndexChanged);
             // 
             // n_maxAlunos
             // 
@@ -205,6 +208,7 @@
             this.n_maxAlunos.Name = "n_maxAlunos";
             this.n_maxAlunos.Size = new System.Drawing.Size(114, 20);
             this.n_maxAlunos.TabIndex = 3;
+            this.n_maxAlunos.ValueChanged += new System.EventHandler(this.n_maxAlunos_ValueChanged);
             // 
             // label5
             // 
@@ -221,6 +225,7 @@
             this.tb_dscTurma.Name = "tb_dscTurma";
             this.tb_dscTurma.Size = new System.Drawing.Size(218, 20);
             this.tb_dscTurma.TabIndex = 1;
+            this.tb_dscTurma.TextChanged += new System.EventHandler(this.tb_dscTurma_TextChanged);
             // 
             // label6
             // 
