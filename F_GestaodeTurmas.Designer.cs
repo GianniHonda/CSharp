@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_turmas = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_nomeTurma = new System.Windows.Forms.Button();
@@ -43,24 +43,26 @@
             this.cb_status = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cb_horario = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.n_maxAlunos = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tb_dscTurma = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_turmas)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.n_maxAlunos)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_turmas
             // 
             this.dgv_turmas.AllowUserToAddRows = false;
             this.dgv_turmas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_turmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_turmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_turmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_turmas.EnableHeadersVisualStyles = false;
             this.dgv_turmas.Location = new System.Drawing.Point(3, 3);
@@ -69,8 +71,9 @@
             this.dgv_turmas.ReadOnly = true;
             this.dgv_turmas.RowHeadersVisible = false;
             this.dgv_turmas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_turmas.Size = new System.Drawing.Size(335, 414);
+            this.dgv_turmas.Size = new System.Drawing.Size(313, 337);
             this.dgv_turmas.TabIndex = 0;
+            this.dgv_turmas.SelectionChanged += new System.EventHandler(this.dgv_turmas_SelectionChanged);
             // 
             // panel1
             // 
@@ -80,7 +83,7 @@
             this.panel1.Controls.Add(this.btn_salvarEdicoes);
             this.panel1.Controls.Add(this.btn_nomeTurma);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 419);
+            this.panel1.Location = new System.Drawing.Point(0, 344);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(544, 31);
             this.panel1.TabIndex = 1;
@@ -133,7 +136,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(342, 3);
+            this.label1.Location = new System.Drawing.Point(319, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 2;
@@ -142,15 +145,15 @@
             // cb_professor
             // 
             this.cb_professor.FormattingEnabled = true;
-            this.cb_professor.Location = new System.Drawing.Point(345, 20);
+            this.cb_professor.Location = new System.Drawing.Point(322, 77);
             this.cb_professor.Name = "cb_professor";
-            this.cb_professor.Size = new System.Drawing.Size(187, 21);
-            this.cb_professor.TabIndex = 1;
+            this.cb_professor.Size = new System.Drawing.Size(218, 21);
+            this.cb_professor.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(342, 68);
+            this.label2.Location = new System.Drawing.Point(322, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 4;
@@ -159,7 +162,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(442, 68);
+            this.label3.Location = new System.Drawing.Point(445, 124);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 5;
@@ -168,15 +171,15 @@
             // cb_status
             // 
             this.cb_status.FormattingEnabled = true;
-            this.cb_status.Location = new System.Drawing.Point(445, 94);
+            this.cb_status.Location = new System.Drawing.Point(445, 140);
             this.cb_status.Name = "cb_status";
-            this.cb_status.Size = new System.Drawing.Size(87, 21);
-            this.cb_status.TabIndex = 3;
+            this.cb_status.Size = new System.Drawing.Size(95, 21);
+            this.cb_status.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(345, 126);
+            this.label4.Location = new System.Drawing.Point(322, 178);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 13);
             this.label4.TabIndex = 7;
@@ -185,24 +188,42 @@
             // cb_horario
             // 
             this.cb_horario.FormattingEnabled = true;
-            this.cb_horario.Location = new System.Drawing.Point(348, 143);
+            this.cb_horario.Location = new System.Drawing.Point(325, 195);
             this.cb_horario.Name = "cb_horario";
-            this.cb_horario.Size = new System.Drawing.Size(184, 21);
-            this.cb_horario.TabIndex = 4;
+            this.cb_horario.Size = new System.Drawing.Size(215, 21);
+            this.cb_horario.TabIndex = 5;
             // 
-            // numericUpDown1
+            // n_maxAlunos
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(348, 94);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(91, 20);
-            this.numericUpDown1.TabIndex = 2;
+            this.n_maxAlunos.Location = new System.Drawing.Point(325, 140);
+            this.n_maxAlunos.Name = "n_maxAlunos";
+            this.n_maxAlunos.Size = new System.Drawing.Size(114, 20);
+            this.n_maxAlunos.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(319, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Nome Turma";
+            // 
+            // tb_dscTurma
+            // 
+            this.tb_dscTurma.Location = new System.Drawing.Point(322, 24);
+            this.tb_dscTurma.Name = "tb_dscTurma";
+            this.tb_dscTurma.Size = new System.Drawing.Size(218, 20);
+            this.tb_dscTurma.TabIndex = 1;
             // 
             // F_GestaodeTurmas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(544, 450);
-            this.Controls.Add(this.numericUpDown1);
+            this.ClientSize = new System.Drawing.Size(544, 375);
+            this.Controls.Add(this.tb_dscTurma);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.n_maxAlunos);
             this.Controls.Add(this.cb_horario);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cb_status);
@@ -221,7 +242,7 @@
             this.Load += new System.EventHandler(this.F_GestaodeTurmas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_turmas)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.n_maxAlunos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,6 +264,8 @@
         private System.Windows.Forms.ComboBox cb_status;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cb_horario;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown n_maxAlunos;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tb_dscTurma;
     }
 }
