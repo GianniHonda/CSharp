@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_turmas = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_nomeTurma = new System.Windows.Forms.Button();
@@ -46,6 +46,8 @@
             this.n_maxAlunos = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_dscTurma = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tb_vagas = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_turmas)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.n_maxAlunos)).BeginInit();
@@ -55,14 +57,14 @@
             // 
             this.dgv_turmas.AllowUserToAddRows = false;
             this.dgv_turmas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_turmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_turmas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_turmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_turmas.EnableHeadersVisualStyles = false;
             this.dgv_turmas.Location = new System.Drawing.Point(3, 3);
@@ -96,6 +98,7 @@
             this.btn_nomeTurma.TabIndex = 0;
             this.btn_nomeTurma.Text = "Nome Turma";
             this.btn_nomeTurma.UseVisualStyleBackColor = true;
+            this.btn_nomeTurma.Click += new System.EventHandler(this.btn_nomeTurma_Click);
             // 
             // btn_salvarEdicoes
             // 
@@ -105,6 +108,7 @@
             this.btn_salvarEdicoes.TabIndex = 1;
             this.btn_salvarEdicoes.Text = "Salvar Edições";
             this.btn_salvarEdicoes.UseVisualStyleBackColor = true;
+            this.btn_salvarEdicoes.Click += new System.EventHandler(this.btn_salvarEdicoes_Click);
             // 
             // btn_excluirTurma
             // 
@@ -114,6 +118,7 @@
             this.btn_excluirTurma.TabIndex = 2;
             this.btn_excluirTurma.Text = "Excluir Turma";
             this.btn_excluirTurma.UseVisualStyleBackColor = true;
+            this.btn_excluirTurma.Click += new System.EventHandler(this.btn_excluirTurma_Click);
             // 
             // btn_imprimirTurma
             // 
@@ -132,6 +137,7 @@
             this.btn_fechar.TabIndex = 4;
             this.btn_fechar.Text = "Fechar";
             this.btn_fechar.UseVisualStyleBackColor = true;
+            this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
             // 
             // label1
             // 
@@ -216,11 +222,29 @@
             this.tb_dscTurma.Size = new System.Drawing.Size(218, 20);
             this.tb_dscTurma.TabIndex = 1;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(325, 232);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(37, 13);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Vagas";
+            // 
+            // tb_vagas
+            // 
+            this.tb_vagas.Location = new System.Drawing.Point(328, 249);
+            this.tb_vagas.Name = "tb_vagas";
+            this.tb_vagas.Size = new System.Drawing.Size(100, 20);
+            this.tb_vagas.TabIndex = 10;
+            // 
             // F_GestaodeTurmas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 375);
+            this.Controls.Add(this.tb_vagas);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.tb_dscTurma);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.n_maxAlunos);
@@ -267,5 +291,7 @@
         private System.Windows.Forms.NumericUpDown n_maxAlunos;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tb_dscTurma;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tb_vagas;
     }
 }

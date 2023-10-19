@@ -102,5 +102,56 @@ namespace CFB_Academia
                 cb_horario.SelectedValue= dt.Rows[0].Field<Int64>("N_IDHORARIO");
             }
         }
+
+        private void btn_nomeTurma_Click(object sender, EventArgs e)
+        {
+            tb_dscTurma.Clear();
+            cb_professor.SelectedIndex = -1;
+            n_maxAlunos.Value = 0;
+            cb_status.SelectedIndex = -1;
+            cb_horario.SelectedIndex = -1;
+        }
+
+        private void btn_salvarEdicoes_Click(object sender, EventArgs e)
+        {
+            int linha = dgv_turmas.SelectedRows[0].Index;
+
+            string queryAtualizarTurma = String.Format(@"
+                UPDATE
+                    tb_turmas
+                SET
+                    T_DSCTURMA='{0}',
+                    N_IDPROFESSOR={1},
+                    N_IDHORARIO={2},
+                    N_MAXIMOALUNOS={3},
+                    T_STATUS='{4}'
+                WHERE
+                    N_IDTURMA={5}",tb_dscTurma  .Text,cb_professor.SelectedValue,cb_horario.SelectedValue,Int32.Parse(Math.Round(n_maxAlunos.Value,0).ToString()),cb_status.SelectedValue,idSelecionado);
+            Banco.dml(queryAtualizarTurma);
+            dgv_turmas[1, linha].Value = tb_dscTurma.Text;
+            dgv_turmas[2, linha].Value = cb_horario.Text;
+            MessageBox.Show("Dados gravados");
+        }
+
+        private void btn_excluirTurma_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Confirma exclusão?", "Excluir?", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                string queryExcluirTurma = String.Format(@"
+                    DELETE
+                    FROM
+                        tb_turmas
+                    WHERE
+                        N_IDTURMA={0}",idSelecionado);
+                Banco.dml(queryExcluirTurma);
+                dgv_turmas.Rows.Remove(dgv_turmas.CurrentRow);
+            }
+        }
+
+        private void btn_fechar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
