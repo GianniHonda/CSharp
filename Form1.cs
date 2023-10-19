@@ -19,6 +19,25 @@ namespace CFB_Academia
             f_Login.ShowDialog();
         }
 
+        private void abreForm(int nivel,Form f)
+        {
+            if (Globais.logado)
+            {
+                if (Globais.nivel >= 1) //procedimentos da janela
+                { 
+                    f.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Acesso não permitido");
+                }
+            }
+            else
+            {
+                MessageBox.Show("É necessário ter um usuário logado");
+            }
+        }
+
         private void logonToolStripMenuItem_Click(object sender, EventArgs e)
         {
             F_Login f_Login = new F_Login(this);
@@ -36,73 +55,42 @@ namespace CFB_Academia
 
         private void bancoDeDadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Globais.logado)
-            {
-                if(Globais.nivel >= 2) //procedimentos da janela
-                {
-
-                }
-                else
-                {
-                    MessageBox.Show("Acesso não permitido");
-                }
-            }
-            else
-            {
-                MessageBox.Show("É necessário ter um usuário logado");
-            }
+            //abreForm();
         }
 
         private void novoUsuárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Globais.logado)
-            {
-                if (Globais.nivel >= 1) //procedimentos da janela
-                {
-                    F_NovoUsuario f_NovoUsuario = new F_NovoUsuario();
-                    f_NovoUsuario.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Acesso não permitido");
-                }
-            }
-            else
-            {
-                MessageBox.Show("É necessário ter um usuário logado");
-            }
+            F_NovoUsuario f_NovoUsuario = new F_NovoUsuario();
+                abreForm(1, f_NovoUsuario);
         }
 
         private void gestãoDeUsuáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Globais.logado)
-            {
-                if (Globais.nivel >= 1) //procedimentos da janela
-                {
-                    F_GestaoUsuarios f_GestaoUsuarios = new F_GestaoUsuarios(); 
-                    f_GestaoUsuarios.ShowDialog();
-                }
-                else
-                {
-                    MessageBox.Show("Acesso não permitido");
-                }
-            }
-            else
-            {
-                MessageBox.Show("É necessário ter um usuário logado");
-            }
+            F_GestaoUsuarios f_GestaoUsuarios = new F_GestaoUsuarios();
+            abreForm(1, f_GestaoUsuarios);
         }
 
         private void novoAlunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Globais.logado)
-            {
-                //procedimentos vem diretamente aqui
-            }
-            else
-            {
-                MessageBox.Show("É necessário ter um usuário logado");
-            }
+            //abreForm(1, F_GestaoUsuarios);
+        }
+
+        private void horáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_Horarios f_Horarios = new F_Horarios();
+            abreForm(2, f_Horarios);
+        }
+
+        private void professoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_GestaoProfessores f_GestaoProfessores = new F_GestaoProfessores();
+            abreForm(2, f_GestaoProfessores);
+        }
+
+        private void turmasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_GestaodeTurmas f_GestaodeTurmas = new F_GestaodeTurmas();
+            abreForm(2, f_GestaodeTurmas);
         }
     }
 }
