@@ -62,14 +62,15 @@
             this.dgv_turmas.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_turmas.RowHeadersVisible = false;
             this.dgv_turmas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_turmas.Size = new System.Drawing.Size(565, 446);
+            this.dgv_turmas.Size = new System.Drawing.Size(596, 446);
             this.dgv_turmas.TabIndex = 0;
+            this.dgv_turmas.DoubleClick += new System.EventHandler(this.dgv_turmas_DoubleClick);
             // 
             // F_SelecionarTurma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 450);
+            this.ClientSize = new System.Drawing.Size(598, 450);
             this.Controls.Add(this.dgv_turmas);
             this.Name = "F_SelecionarTurma";
             this.Text = "F_SelecionarTurma";
