@@ -36,10 +36,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_novo = new System.Windows.Forms.Button();
-            this.btn_gravar = new System.Windows.Forms.Button();
-            this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_fechar = new System.Windows.Forms.Button();
+            this.btn_cancelar = new System.Windows.Forms.Button();
+            this.btn_gravar = new System.Windows.Forms.Button();
+            this.btn_novo = new System.Windows.Forms.Button();
             this.cb_status = new System.Windows.Forms.ComboBox();
             this.tb_turma = new System.Windows.Forms.TextBox();
             this.btn_selTurma = new System.Windows.Forms.Button();
@@ -122,26 +122,15 @@
             this.panel1.Size = new System.Drawing.Size(419, 29);
             this.panel1.TabIndex = 7;
             // 
-            // btn_novo
+            // btn_fechar
             // 
-            this.btn_novo.Location = new System.Drawing.Point(3, 3);
-            this.btn_novo.Name = "btn_novo";
-            this.btn_novo.Size = new System.Drawing.Size(98, 23);
-            this.btn_novo.TabIndex = 0;
-            this.btn_novo.Text = "Novo";
-            this.btn_novo.UseVisualStyleBackColor = true;
-            this.btn_novo.Click += new System.EventHandler(this.btn_novo_Click);
-            // 
-            // btn_gravar
-            // 
-            this.btn_gravar.Enabled = false;
-            this.btn_gravar.Location = new System.Drawing.Point(107, 3);
-            this.btn_gravar.Name = "btn_gravar";
-            this.btn_gravar.Size = new System.Drawing.Size(98, 23);
-            this.btn_gravar.TabIndex = 1;
-            this.btn_gravar.Text = "Gravar";
-            this.btn_gravar.UseVisualStyleBackColor = true;
-            this.btn_gravar.Click += new System.EventHandler(this.button1_Click);
+            this.btn_fechar.Location = new System.Drawing.Point(315, 3);
+            this.btn_fechar.Name = "btn_fechar";
+            this.btn_fechar.Size = new System.Drawing.Size(98, 23);
+            this.btn_fechar.TabIndex = 3;
+            this.btn_fechar.Text = "Fechar";
+            this.btn_fechar.UseVisualStyleBackColor = true;
+            this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
             // 
             // btn_cancelar
             // 
@@ -154,15 +143,26 @@
             this.btn_cancelar.UseVisualStyleBackColor = true;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
-            // btn_fechar
+            // btn_gravar
             // 
-            this.btn_fechar.Location = new System.Drawing.Point(315, 3);
-            this.btn_fechar.Name = "btn_fechar";
-            this.btn_fechar.Size = new System.Drawing.Size(98, 23);
-            this.btn_fechar.TabIndex = 3;
-            this.btn_fechar.Text = "Fechar";
-            this.btn_fechar.UseVisualStyleBackColor = true;
-            this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
+            this.btn_gravar.Enabled = false;
+            this.btn_gravar.Location = new System.Drawing.Point(107, 3);
+            this.btn_gravar.Name = "btn_gravar";
+            this.btn_gravar.Size = new System.Drawing.Size(98, 23);
+            this.btn_gravar.TabIndex = 1;
+            this.btn_gravar.Text = "Gravar";
+            this.btn_gravar.UseVisualStyleBackColor = true;
+            this.btn_gravar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_novo
+            // 
+            this.btn_novo.Location = new System.Drawing.Point(3, 3);
+            this.btn_novo.Name = "btn_novo";
+            this.btn_novo.Size = new System.Drawing.Size(98, 23);
+            this.btn_novo.TabIndex = 0;
+            this.btn_novo.Text = "Novo";
+            this.btn_novo.UseVisualStyleBackColor = true;
+            this.btn_novo.Click += new System.EventHandler(this.btn_novo_Click);
             // 
             // cb_status
             // 
@@ -190,6 +190,7 @@
             this.btn_selTurma.TabIndex = 10;
             this.btn_selTurma.Text = "...";
             this.btn_selTurma.UseVisualStyleBackColor = true;
+            this.btn_selTurma.Click += new System.EventHandler(this.btn_selTurma_Click);
             // 
             // tb_plano
             // 
@@ -254,9 +255,9 @@
         private System.Windows.Forms.Button btn_fechar;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.ComboBox cb_status;
-        private System.Windows.Forms.TextBox tb_turma;
         private System.Windows.Forms.Button btn_selTurma;
         private System.Windows.Forms.TextBox tb_plano;
         private System.Windows.Forms.Button btn_selPlano;
+        public System.Windows.Forms.TextBox tb_turma;
     }
 }

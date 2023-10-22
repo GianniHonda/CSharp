@@ -81,5 +81,11 @@ namespace CFB_Academia
         {
             Close();
         }
+
+        private void btn_selTurma_Click(object sender, EventArgs e)
+        {
+            F_SelecionarTurma f_SelecionarTurma = new F_SelecionarTurma(this);
+            f_SelecionarTurma.ShowDialog();
+        }
     }
 }
