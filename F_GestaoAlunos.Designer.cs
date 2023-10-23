@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tb_nome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mts_telefone = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cb_status = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,6 +57,7 @@
             this.dgv_alunos.Name = "dgv_alunos";
             this.dgv_alunos.Size = new System.Drawing.Size(279, 416);
             this.dgv_alunos.TabIndex = 0;
+            this.dgv_alunos.SelectionChanged += new System.EventHandler(this.dgv_alunos_SelectionChanged);
             // 
             // label1
             // 
@@ -83,13 +84,13 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Telefone";
             // 
-            // maskedTextBox1
+            // mts_telefone
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(287, 72);
-            this.maskedTextBox1.Mask = "(00) 0000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 4;
+            this.mts_telefone.Location = new System.Drawing.Point(287, 72);
+            this.mts_telefone.Mask = "(00) 0000-0000";
+            this.mts_telefone.Name = "mts_telefone";
+            this.mts_telefone.Size = new System.Drawing.Size(100, 20);
+            this.mts_telefone.TabIndex = 4;
             // 
             // label3
             // 
@@ -171,6 +172,7 @@
             this.btn_salvarEdicoes.TabIndex = 0;
             this.btn_salvarEdicoes.Text = "Salvar Edições";
             this.btn_salvarEdicoes.UseVisualStyleBackColor = true;
+            this.btn_salvarEdicoes.Click += new System.EventHandler(this.btn_salvarEdicoes_Click);
             // 
             // btn_excluirAluno
             // 
@@ -180,6 +182,7 @@
             this.btn_excluirAluno.TabIndex = 1;
             this.btn_excluirAluno.Text = "Excluir Aluno";
             this.btn_excluirAluno.UseVisualStyleBackColor = true;
+            this.btn_excluirAluno.Click += new System.EventHandler(this.btn_excluirAluno_Click);
             // 
             // btn_financeiro
             // 
@@ -198,6 +201,7 @@
             this.btn_fechar.TabIndex = 3;
             this.btn_fechar.Text = "Fechar";
             this.btn_fechar.UseVisualStyleBackColor = true;
+            this.btn_fechar.Click += new System.EventHandler(this.btn_fechar_Click);
             // 
             // F_GestaoAlunos
             // 
@@ -212,7 +216,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cb_status);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.mts_telefone);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_nome);
             this.Controls.Add(this.label1);
@@ -234,7 +238,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_nome;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mts_telefone;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cb_status;
         private System.Windows.Forms.Label label4;
