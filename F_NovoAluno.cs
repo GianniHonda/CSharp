@@ -29,7 +29,7 @@ namespace CFB_Academia
             
             tb_nome.Enabled = false;
             mtb_telefone.Enabled = false;
-            cb_status.Enabled = false;
+            cb_status.Enabled = false; 
             btn_gravar.Enabled = false;
             btn_cancelar.Enabled = false;
             btn_novo.Enabled = true;

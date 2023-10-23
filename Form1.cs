@@ -93,5 +93,11 @@ namespace CFB_Academia
             F_GestaodeTurmas f_GestaodeTurmas = new F_GestaodeTurmas();
             abreForm(2, f_GestaodeTurmas);
         }
+
+        private void gestãoDeAlunosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_GestaoAlunos f_GestaoAlunos = new F_GestaoAlunos();
+            abreForm(2, f_GestaoAlunos);
+        }
     }
 }
