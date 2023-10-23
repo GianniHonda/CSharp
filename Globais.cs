@@ -14,6 +14,7 @@ namespace CFB_Academia
         public static string caminho = System.Environment.CurrentDirectory;
         public static string nomeBanco = "banco_academia";
         public static string caminhoBanco = caminho+@"\banco\";
+        public static string caminhoFotos = caminho + @"\fotos\";
 
         /*
         tb_usuarios
