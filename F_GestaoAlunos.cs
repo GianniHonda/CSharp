@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,14 +37,20 @@ namespace CFB_Academia
             dgv_alunos.Columns[0].Width = 40;
             dgv_alunos.Columns[1].Width = 120;
 
+            tb_nome.Text = "";
+
+            if (dgv_alunos.SelectedRows.Count > 0)
+            {
             tb_nome.Text = dgv_alunos.Rows[dgv_alunos.SelectedRows[0].Index].Cells[1].Value.ToString();
+            }
+           
 
             //popular ComboBox Turmas
             string vqueryTurmas = @"
                 SELECT
                     N_IDTURMA,
                     ('Vagas: '|| (
-                        N_MAXIMOALUNOS)-(
+                        (N_MAXIMOALUNOS)-(
                             SELECT
                                 count(tba.N_IDALUNO)
                             FROM
@@ -112,6 +119,10 @@ namespace CFB_Academia
         {
             if(MessageBox.Show("Confirma exclusão?", "Excluir", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
+                if (File.Exists(pb_foto.ImageLocation))
+                {
+                    File.Delete(pb_foto.ImageLocation);
+                }
                 string vqueryExcluirAluno = String.Format(@"
                     DELETE FROM
                         tb_alunos
@@ -133,6 +144,8 @@ namespace CFB_Academia
             DataGridView dgv = (DataGridView)sender;
             if(dgv.SelectedRows.Count > 0 )
             {
+                idSelecionado = dgv_alunos.Rows[0].Cells[0].Value.ToString();
+                tb_nome.Text = dgv_alunos.Rows[dgv_alunos.SelectedRows[0].Index].Cells[1].Value.ToString();
                 idSelecionado = dgv.Rows[dgv.SelectedRows[0].Index].Cells[0].Value.ToString();
                 string vqueryCampos = String.Format(@"
                     SELECT
@@ -140,7 +153,8 @@ namespace CFB_Academia
                         T_NOMEALUNO,
                         T_TELEFONE,
                         T_STATUS,
-                        N_IDTURMA
+                        N_IDTURMA,       
+                        T_FOTO
                     FROM
                         tb_alunos
                     WHERE N_IDALUNO={0}
@@ -151,6 +165,7 @@ namespace CFB_Academia
                 cb_status.SelectedValue = dt.Rows[0].Field<string>("T_STATUS");
                 cb_turmas.SelectedValue = dt.Rows[0].Field<Int64>("N_IDTURMA");
                 turmaAtual = cb_turmas.Text;
+                pb_foto.ImageLocation = dt.Rows[0].Field<string>("T_FOTO");
             }
         }
     }
