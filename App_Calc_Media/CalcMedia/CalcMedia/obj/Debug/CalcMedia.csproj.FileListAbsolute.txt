@@ -1,0 +1,10 @@
+D:\C#\App_Calc_Media\CalcMedia\CalcMedia\bin\Debug\CalcMedia.exe.config
+D:\C#\App_Calc_Media\CalcMedia\CalcMedia\bin\Debug\CalcMedia.exe
+D:\C#\App_Calc_Media\CalcMedia\CalcMedia\bin\Debug\CalcMedia.pdb
+D:\C#\App_Calc_Media\CalcMedia\CalcMedia\obj\Debug\CalcMedia.csproj.AssemblyReference.cache
+D:\C#\App_Calc_Media\CalcMedia\CalcMedia\obj\Debug\CalcMedia.Form1.resources
+D:\C#\App_Calc_Media\CalcMedia\CalcMedia\obj\Debug\CalcMedia.Properties.Resources.resources
+D:\C#\App_Calc_Media\CalcMedia\CalcMedia\obj\Debug\CalcMedia.csproj.GenerateResource.cache
+D:\C#\App_Calc_Media\CalcMedia\CalcMedia\obj\Debug\CalcMedia.csproj.CoreCompileInputs.cache
+D:\C#\App_Calc_Media\CalcMedia\CalcMedia\obj\Debug\CalcMedia.exe
+D:\C#\App_Calc_Media\CalcMedia\CalcMedia\obj\Debug\CalcMedia.pdb
